@@ -28,6 +28,15 @@ def calculate():
 
     elif operation == 'divide':
         result = float(num1) / float(num2)
+        assert calculate(10, 10) == 1
+        assert calculate(-20, 10) == -2
+        assert calculate(-50, -10) == 5
         return render_template('app.html', result=result)
+
     else:
         return render_template('app.html')
+
+
+
+
+
